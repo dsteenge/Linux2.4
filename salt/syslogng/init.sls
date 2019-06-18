@@ -1,10 +1,10 @@
-ufw:
+syslog-ng:
   pkg:
     - installed
 
-/etc/ufw/user.rules:
+/etc/syslog-ng/syslog-ng.conf:
   file.managed:
-    - source: salt://ufw/user.rules
+    - source: salt://syslogng/syslog-ng.conf
     - user: root
     - group: root
     - mode: 777
