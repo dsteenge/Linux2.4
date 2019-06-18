@@ -1,0 +1,3 @@
+ufw:
+  pkg:
+    - installed
