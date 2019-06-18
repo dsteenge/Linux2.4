@@ -4,7 +4,7 @@ syslog-ng:
 
 /etc/syslog-ng/syslog-ng.conf:
   file.managed:
-    - source: salt://syslogng/syslog-ng.conf
+    - source: salt://configs/syslog-ng.conf
     - user: root
     - group: root
     - mode: 777
