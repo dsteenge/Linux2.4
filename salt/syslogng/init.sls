@@ -10,3 +10,10 @@ syslog-ng:
     - mode: 777
     - defaults:
       master_ip: "@10.2.3.4"
+
+'ufw allow 514':
+  cmd.run
+
+'systemctl restart syslog-ng':
+  cmd.run
+
